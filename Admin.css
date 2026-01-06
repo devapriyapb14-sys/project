@@ -1,0 +1,321 @@
+/* ================= GLOBAL ================= */
+body {
+  margin: 0;
+  font-family: "Poppins", Arial, sans-serif;
+  background: #f4f6f7;
+}
+
+/* ================= HEADER ================= */
+.header {
+  background: #2c3e50;
+  color: white;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+
+  position:relative;
+  width:100%;
+}
+
+.heading{
+  margin: 0;
+  text-align: center;
+  color: white;
+  font-size: 24px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 22px;
+  text-align: center;
+}
+
+.logout {
+  background: #e74c3c;
+  color: white;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.logout:hover {
+  background: #c0392b;
+}
+
+/* ================= DASHBOARD CARDS ================= */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, 260px);
+  gap: 25px;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.card {
+  background: white;
+  padding: 35px 20px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+  transition: all 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.18);
+}
+
+/* ================= PAGE CONTAINER ================= */
+.container {
+  width: 520px; /* medium size */
+  margin: 40px auto;
+  background: white;
+  padding: 25px 30px;
+  border-radius: 14px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.page-title {
+  text-align: center;
+  margin-bottom: 22px;
+  color: #2c3e50;
+  font-size: 20px;
+}
+
+/* ================= FORM ================= */
+.form-box {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.form-box input {
+  padding: 11px 14px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.form-box input:focus {
+  outline: none;
+  border-color: #2c3e50;
+}
+
+/* ================= BUTTONS ================= */
+.btn-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 22px;
+}
+
+.primary {
+  background: #2c3e50;
+  color: white;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.primary:hover {
+  background: #1f2e3a;
+}
+
+.back {
+  background: gray;
+  color: white;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.back:hover {
+  background: #555;
+}
+
+/* ================= ROWS (USERS / RENTALS) ================= */
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.row span {
+  font-size: 14px;
+}
+
+.row button {
+  padding: 6px 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background: #2c3e50;
+  color: white;
+  font-size: 13px;
+}
+
+.row button:hover {
+  background: #1f2e3a;
+}
+
+/* ================= TEXT ================= */
+p {
+  font-size: 14px;
+  color: #444;
+  text-align: center;
+}
+
+.dashboard {
+  padding: 30px;
+}
+
+.title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 280px);
+  gap: 30px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.dash-card {
+  background: #eee;
+  height: 150px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.dash-card:hover {
+  background: #e0e0e0;
+}
+
+.icon {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.dash-card p {
+  font-size: 16px;
+  color: #555;
+}
+
+.rental-container {
+  width: 95%;
+  margin: 30px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.count {
+  margin-bottom: 15px;
+}
+
+.table-head,
+.table-row {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr 1.5fr 1fr 1.2fr 2fr;
+  gap: 15px;
+  padding: 12px 0;
+  align-items: center;
+}
+
+.table-head {
+  font-weight: 600;
+  border-bottom: 2px solid #ccc;
+}
+
+.table-row {
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+}
+
+.available {
+  color: green;
+  font-weight: 600;
+}
+
+.rented {
+  color: red;
+  font-weight: 600;
+}
+
+.user {
+  font-weight: 500;
+}
+
+.no {
+  color: #777;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+.approve {
+  background: #2c3e50;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.reject {
+  background: #e74c3c;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+/* ================= COMMON AUTH BACKGROUND ================= */
+.common-bg {
+  min-height: 100vh;
+  background-image: url("https://i.pinimg.com/736x/af/f2/8a/aff28acbd67bef1684bc93010f962db9.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* Dark overlay for readability */
+.common-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+/* Content should stay above overlay */
+.common-bg > * {
+  position: relative;
+  z-index: 1;
+}
+

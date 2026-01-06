@@ -1,0 +1,265 @@
+/* Full page background */
+.auth-wrapper {
+  min-height: 100vh;
+  background: #e6eef6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Card */
+.auth-card {
+  width: 900px;
+  height: 520px;
+  background: #ffffff;
+  display: flex;
+  border-radius: 12px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* LEFT SIDE */
+.auth-left {
+  width: 50%;
+  padding: 40px;
+  background: #f7fafc;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.auth-left h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.auth-left p {
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.auth-left img {
+  width: auto;
+  height: 200px;
+  object-fit: contain;
+  display: block;
+  max-width: 100%;
+  margin: 0 auto 15px;
+}
+
+/* RIGHT SIDE */
+.auth-right {
+  width: 50%;
+  padding: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.auth-right form {
+  width: 100%;
+}
+
+.auth-right input {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+}
+
+.auth-right input:focus {
+  outline: none;
+  border-color: #0d3b66;
+}
+
+/* Button */
+.auth-right button {
+  width: 100%;
+  padding: 12px;
+  background: #0d3b66;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.auth-right button:hover {
+  background: #092c4c;
+}
+
+/* Error */
+.error {
+  color: red;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+/* Signup link */
+.switch {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.switch a {
+  color: #0d3b66;
+  text-decoration: none;
+  font-weight: 500;
+}
+/* Full page background */
+.auth-wrapper {
+  min-height: 100vh;
+  background: #dce9f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+/* LEFT blue shape */
+.auth-wrapper::before {
+  content: "";
+  position: absolute;
+  width: 450px;
+  height: 450px;
+  background: #0d3b66;
+  border-radius: 50%;
+  top: -120px;
+  left: -150px;
+}
+
+/* RIGHT blue shape */
+.auth-wrapper::after {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: #0d3b66;
+  border-radius: 50%;
+  bottom: -160px;
+  right: -180px;
+}
+
+/* Card */
+.auth-card {
+  width: 900px;
+  height: 520px;
+  background: #ffffff;
+  display: flex;
+  border-radius: 14px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+/* BACKGROUND */
+.auth-wrapper {
+  min-height: 100vh;
+  background: #dce9f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Curved shapes */
+.auth-wrapper::before,
+.auth-wrapper::after {
+  content: "";
+  position: absolute;
+  background: #0d3b66;
+  border-radius: 50%;
+}
+
+.auth-wrapper::before {
+  width: 450px;
+  height: 450px;
+  top: -120px;
+  left: -150px;
+}
+
+.auth-wrapper::after {
+  width: 500px;
+  height: 500px;
+  bottom: -160px;
+  right: -180px;
+}
+
+/* CARD */
+.auth-card {
+  width: 900px;
+  height: 520px;
+  background: #fff;
+  display: flex;
+  border-radius: 14px;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.15);
+  position: relative;
+  z-index: 1;
+}
+
+.auth-card.large {
+  height: 620px;
+}
+
+/* LEFT */
+.auth-left {
+  width: 50%;
+  padding: 40px;
+  background: #f7fafc;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.auth-left img {
+  max-width: 300px;
+}
+
+/* RIGHT */
+.auth-right {
+  width: 50%;
+  padding: 40px;
+}
+
+.auth-right.scroll {
+  overflow-y: auto;
+}
+
+.auth-right input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+}
+
+.auth-right button {
+  width: 100%;
+  padding: 12px;
+  background: #0d3b66;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* TERMS */
+.terms {
+  display: flex;
+  gap: 8px;
+  font-size: 13px;
+  margin-bottom: 15px;
+}
+
+.error {
+  color: red;
+  font-size: 13px;
+}

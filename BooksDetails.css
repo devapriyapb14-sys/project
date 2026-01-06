@@ -1,0 +1,106 @@
+.page {
+    max-width: 900px;
+    margin: auto;
+    padding: 25px;
+    font-family: "Poppins", Arial, sans-serif;
+  }
+  
+  .back-link {
+    text-decoration: none;
+    color: #555;
+  }
+  
+  .title {
+    text-align: center;
+    font-size: 34px;
+    font-weight: 700;
+    margin: 20px 0;
+  }
+  
+  /* 🔥 MAIN BOX */
+  .book-box {
+    display: flex;
+    gap: 30px;
+    padding: 25px;
+    border-radius: 16px;
+    background: #fff;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    align-items: center;
+  }
+  
+  /* LEFT IMAGE */
+  .book-img {
+    width: 220px;
+    height: 320px;
+    border-radius: 12px;
+    object-fit: cover;
+  }
+  
+  /* RIGHT DETAILS */
+  .book-info {
+    font-size: 16px;
+    line-height: 1.8;
+  }
+  
+  /* NAV BUTTONS */
+  .nav-btns {
+    text-align: center;
+    margin: 25px 0;
+  }
+  
+  .nav-btns button {
+    padding: 8px 16px;
+    margin: 0 10px;
+    border-radius: 20px;
+    border: none;
+    background: #222;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .nav-btns button:disabled {
+    background: #aaa;
+  }
+  
+  /* BOTTOM BOXES */
+  .bottom-boxes {
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+  }
+  
+  .small-box {
+    flex: 1;
+    padding: 15px;
+    border-radius: 14px;
+    background: #fff;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+  }
+  
+  .small-box h4 {
+    margin-bottom: 8px;
+  }
+  
+  .small-box textarea {
+    width: 100%;
+  }
+  
+  .small-box button {
+    margin-top: 5px;
+    padding: 6px 12px;
+    border-radius: 20px;
+    border: none;
+    background: #4CAF50;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .available {
+    color: green;
+    font-weight: 600;
+  }
+  
+  .rented {
+    color: red;
+    font-weight: 600;
+  }
